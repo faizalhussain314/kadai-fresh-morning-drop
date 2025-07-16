@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -54,10 +53,10 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-16 gradient-hero relative overflow-hidden">
+      <section className="pt-24 pb-20 gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
                 <Star className="h-4 w-4 mr-2" />
@@ -79,17 +78,38 @@ const Index = () => {
                   <Download className="h-5 w-5 mr-2" />
                   Download Customer App
                 </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg">
+                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg bg-transparent">
                   Learn More
                 </Button>
               </div>
             </div>
             <div className="relative animate-float">
-              <img 
-                src="/lovable-uploads/eec24e23-741c-4160-ae69-95b081fdfd2a.png" 
-                alt="Fresh Grocery Delivery" 
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                    <div className="text-4xl mb-2">🥕</div>
+                    <p className="text-white/90 text-sm">Fresh Carrots</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                    <div className="text-4xl mb-2">🥬</div>
+                    <p className="text-white/90 text-sm">Leafy Greens</p>
+                  </div>
+                </div>
+                <div className="space-y-4 mt-8">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                    <div className="text-4xl mb-2">🍅</div>
+                    <p className="text-white/90 text-sm">Tomatoes</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                    <div className="text-4xl mb-2">🥒</div>
+                    <p className="text-white/90 text-sm">Cucumbers</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
+                    <div className="text-4xl mb-2">🍎</div>
+                    <p className="text-white/90 text-sm">Fresh Apples</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
