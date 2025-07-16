@@ -55,61 +55,31 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-20 gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-fade-in-up">
-              <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
-                <Star className="h-4 w-4 mr-2" />
-                Launched July 16, 2025
-              </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
-                Your Daily
-                <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                  Freshness
-                </span>
-                Partner
-              </h1>
-              <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                Farm-fresh vegetables and fruits delivered to your doorstep every morning. 
-                Built by the community, for the community.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift">
-                  <Download className="h-5 w-5 mr-2" />
-                  Download Customer App
-                </Button>
-                <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg bg-transparent">
-                  Learn More
-                </Button>
-              </div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
+          <div className="animate-fade-in-up">
+            <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
+              <Star className="h-4 w-4 mr-2" />
+              Launched July 16, 2025
             </div>
-            <div className="relative animate-float">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
-                    <div className="text-4xl mb-2">🥕</div>
-                    <p className="text-white/90 text-sm">Fresh Carrots</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
-                    <div className="text-4xl mb-2">🥬</div>
-                    <p className="text-white/90 text-sm">Leafy Greens</p>
-                  </div>
-                </div>
-                <div className="space-y-4 mt-8">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
-                    <div className="text-4xl mb-2">🍅</div>
-                    <p className="text-white/90 text-sm">Tomatoes</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
-                    <div className="text-4xl mb-2">🥒</div>
-                    <p className="text-white/90 text-sm">Cucumbers</p>
-                  </div>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-center">
-                    <div className="text-4xl mb-2">🍎</div>
-                    <p className="text-white/90 text-sm">Fresh Apples</p>
-                  </div>
-                </div>
-              </div>
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+              Your Daily
+              <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                Freshness
+              </span>
+              Partner
+            </h1>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
+              Farm-fresh vegetables and fruits delivered to your doorstep every morning. 
+              Built by the community, for the community.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift">
+                <Download className="h-5 w-5 mr-2" />
+                Download Customer App
+              </Button>
+              <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg bg-transparent">
+                Learn More
+              </Button>
             </div>
           </div>
         </div>
