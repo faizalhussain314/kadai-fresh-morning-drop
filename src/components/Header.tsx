@@ -48,8 +48,11 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="gradient-primary text-white hover:shadow-lg transition-all duration-300">
-              Download App
+            <Button className="gradient-primary text-white hover:shadow-lg transition-all duration-300"
+             onClick={() => {
+                window.location.href = "tel:+918050011001";}   }
+            >
+             Call Now
             </Button>
           </nav>
 
@@ -76,8 +79,11 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="gradient-primary text-white w-fit">
-                Download App
+              <Button className="gradient-primary text-white w-fit"
+              onClick={() => {
+                window.location.href = "tel:+918050011001";}   }
+              >
+                Call Now 
               </Button>
             </nav>
           </div>

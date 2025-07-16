@@ -91,17 +91,19 @@ const Vendor = () => {
                 <Button
                   size="lg"
                   className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+                    onClick={() => {
+                  window.location.href = "https://kadai2manai.com/apk/vendor.apk"}}
                 >
                   <Download className="h-5 w-5 mr-2" />
                   Download Vendor App
                 </Button>
-                <Button
+                {/* <Button
                   variant="outline"
                   size="lg"
                   className="border-white bg-transparent text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
                 >
                   Learn How It Works
-                </Button>
+                </Button> */}
               </div>
             </div>
             <div className="relative animate-float">
@@ -218,6 +220,8 @@ const Vendor = () => {
               <Button
                 size="lg"
                 className="gradient-primary text-white hover:shadow-lg font-semibold px-8 py-4 text-lg hover-lift"
+                   onClick={() => {
+                  window.location.href = "https://kadai2manai.com/apk/customer.apk"}}
               >
                 <Download className="h-5 w-5 mr-2" />
                 Get Started Today
@@ -349,6 +353,8 @@ const Vendor = () => {
             <Button
               size="lg"
               className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+                 onClick={() => {
+                  window.location.href = "https://kadai2manai.com/apk/customer.apk"}}
             >
               <Download className="h-5 w-5 mr-2" />
               Download Vendor App

@@ -76,17 +76,19 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+                onClick={() => {
+                  window.location.href = "https://kadai2manai.com/apk/customer.apk"}}
               >
                 <Download className="h-5 w-5 mr-2" />
                 Download Customer App
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg bg-transparent"
               >
                 Learn More
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -156,6 +158,8 @@ const Index = () => {
               <Button
                 size="lg"
                 className="gradient-primary text-white hover:shadow-lg font-semibold px-8 py-4 text-lg hover-lift"
+                   onClick={() => {
+                  window.location.href = "https://kadai2manai.com/apk/customer.apk"}}
               >
                 <Download className="h-5 w-5 mr-2" />
                 Download Now
@@ -271,6 +275,8 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+                 onClick={() => {
+                  window.location.href = "https://kadai2manai.com/apk/customer.apk"}}
             >
               <Download className="h-5 w-5 mr-2" />
               Download Customer App
