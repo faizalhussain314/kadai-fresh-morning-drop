@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -11,8 +10,8 @@ const Header = () => {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "For Vendors", href: "/vendor" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    // { name: "About", href: "#about" },
+    // { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -20,10 +19,13 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <img 
-              src="/lovable-uploads/95287cda-9de7-4684-bf2a-7e1624f6ac70.png" 
-              alt="Kadai 2 Manai Logo" 
+          <Link
+            to="/"
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          >
+            <img
+              src="/lovable-uploads/95287cda-9de7-4684-bf2a-7e1624f6ac70.png"
+              alt="Kadai 2 Manai Logo"
               className="h-10 w-auto"
             />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">
@@ -32,7 +34,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center justify-start space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}

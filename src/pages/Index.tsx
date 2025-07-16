@@ -2,17 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { 
-  Smartphone, 
-  Clock, 
-  Users, 
-  Leaf, 
-  Star, 
-  CheckCircle, 
+import {
+  Smartphone,
+  Clock,
+  Users,
+  Leaf,
+  Star,
+  CheckCircle,
   Download,
   ShoppingBag,
   Truck,
-  Heart
+  Heart,
 } from "lucide-react";
 
 const Index = () => {
@@ -20,23 +20,23 @@ const Index = () => {
     {
       icon: <Clock className="h-6 w-6" />,
       title: "Daily Fresh Delivery",
-      description: "Get fresh produce delivered before 7:30 AM every day"
+      description: "Get fresh produce delivered before 7:30 AM every day",
     },
     {
       icon: <Smartphone className="h-6 w-6" />,
       title: "Simple App Interface",
-      description: "Designed for all age groups with easy-to-use features"
+      description: "Designed for all age groups with easy-to-use features",
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Community-Driven",
-      description: "Supporting local vendors and farmers in your neighborhood"
+      description: "Supporting local vendors and farmers in your neighborhood",
     },
     {
       icon: <Leaf className="h-6 w-6" />,
       title: "100% Fresh & Local",
-      description: "Sourced locally from trusted vendors and farmers"
-    }
+      description: "Sourced locally from trusted vendors and farmers",
+    },
   ];
 
   const benefits = [
@@ -45,13 +45,13 @@ const Index = () => {
     "Real-time order tracking",
     "100% Cash on Delivery",
     "No subscription fees",
-    "Community-trusted vendors"
+    "Community-trusted vendors",
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-20 gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-transparent"></div>
@@ -69,15 +69,22 @@ const Index = () => {
               Partner
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-              Farm-fresh vegetables and fruits delivered to your doorstep every morning. 
-              Built by the community, for the community.
+              Farm-fresh vegetables and fruits delivered to your doorstep every
+              morning. Built by the community, for the community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift">
+              <Button
+                size="lg"
+                className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+              >
                 <Download className="h-5 w-5 mr-2" />
                 Download Customer App
               </Button>
-              <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg bg-transparent">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg bg-transparent"
+              >
                 Learn More
               </Button>
             </div>
@@ -93,11 +100,12 @@ const Index = () => {
               Why Choose Kadai 2 Manai?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experience the convenience of fresh, locally-sourced produce delivered 
-              right to your doorstep with our community-driven approach.
+              Experience the convenience of fresh, locally-sourced produce
+              delivered right to your doorstep with our community-driven
+              approach.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="hover-lift border-0 shadow-lg">
@@ -108,9 +116,7 @@ const Index = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-600">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -129,13 +135,15 @@ const Index = () => {
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Freshness Delivered.
-                <span className="block text-purple-600">Simplicity Designed.</span>
+                <span className="block text-purple-600">
+                  Simplicity Designed.
+                </span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Our customer app is designed with simplicity in mind, making it easy 
-                for every family member to order fresh produce.
+                Our customer app is designed with simplicity in mind, making it
+                easy for every family member to order fresh produce.
               </p>
-              
+
               <div className="space-y-4 mb-8">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
@@ -145,12 +153,15 @@ const Index = () => {
                 ))}
               </div>
 
-              <Button size="lg" className="gradient-primary text-white hover:shadow-lg font-semibold px-8 py-4 text-lg hover-lift">
+              <Button
+                size="lg"
+                className="gradient-primary text-white hover:shadow-lg font-semibold px-8 py-4 text-lg hover-lift"
+              >
                 <Download className="h-5 w-5 mr-2" />
                 Download Now
               </Button>
             </div>
-            
+
             <div className="relative">
               <div className="absolute inset-0 gradient-hero rounded-3xl transform rotate-3"></div>
               <Card className="relative transform -rotate-3 hover:rotate-0 transition-transform duration-500 shadow-2xl">
@@ -191,7 +202,7 @@ const Index = () => {
               About Kadai 2 Manai
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              More than just a delivery app – we're a movement to bring healthy, 
+              More than just a delivery app – we're a movement to bring healthy,
               locally-sourced produce to your community.
             </p>
           </div>
@@ -202,10 +213,13 @@ const Index = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl mb-6">
                   <Heart className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Our Vision
+                </h3>
                 <p className="text-gray-600">
-                  To revolutionize fresh produce access by empowering local vendors 
-                  and delivering farm-fresh essentials directly to homes across Tamil Nadu.
+                  To revolutionize fresh produce access by empowering local
+                  vendors and delivering farm-fresh essentials directly to homes
+                  across Tamil Nadu.
                 </p>
               </CardContent>
             </Card>
@@ -215,10 +229,12 @@ const Index = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 text-green-600 rounded-2xl mb-6">
                   <Users className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Our Mission
+                </h3>
                 <p className="text-gray-600">
-                  Supporting local farmers and vendors with digital tools while delivering 
-                  fresh produce with reliability and transparency.
+                  Supporting local farmers and vendors with digital tools while
+                  delivering fresh produce with reliability and transparency.
                 </p>
               </CardContent>
             </Card>
@@ -228,10 +244,12 @@ const Index = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl mb-6">
                   <Leaf className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Our Values</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  Our Values
+                </h3>
                 <p className="text-gray-600">
-                  Promoting sustainable, zero-waste grocery practices while building 
-                  stronger community connections through technology.
+                  Promoting sustainable, zero-waste grocery practices while
+                  building stronger community connections through technology.
                 </p>
               </CardContent>
             </Card>
@@ -246,15 +264,22 @@ const Index = () => {
             Join Tamil Nadu's Freshest Revolution
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Be a part of the movement that's bringing farms closer to homes, 
-            one delivery at a time.
+            Be a part of the movement that's bringing farms closer to homes, one
+            delivery at a time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift">
+            <Button
+              size="lg"
+              className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+            >
               <Download className="h-5 w-5 mr-2" />
               Download Customer App
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg">
+            <Button
+              variant="outline"
+              size="lg"
+              className=" text-white bg-transparent hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
+            >
               <Truck className="h-5 w-5 mr-2" />
               I'm a Vendor
             </Button>

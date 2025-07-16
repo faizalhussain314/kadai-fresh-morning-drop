@@ -1,20 +1,20 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { 
-  UserPlus, 
-  MapPin, 
-  Truck, 
-  CheckCircle, 
+import {
+  UserPlus,
+  MapPin,
+  Truck,
+  CheckCircle,
   Download,
   Users,
   TrendingUp,
   Shield,
   Smartphone,
   Clock,
-  DollarSign
+  DollarSign,
+  IndianRupee,
 } from "lucide-react";
 
 const Vendor = () => {
@@ -22,23 +22,27 @@ const Vendor = () => {
     {
       icon: <UserPlus className="h-6 w-6" />,
       title: "Customer Registration",
-      description: "Register new customers directly at their doorstep with auto-generated login credentials"
+      description:
+        "Register new customers directly at their doorstep with auto-generated login credentials",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "GPS Navigation",
-      description: "Deliver orders with precision using built-in GPS tracking to customer locations"
+      description:
+        "Deliver orders with precision using built-in GPS tracking to customer locations",
     },
     {
       icon: <Truck className="h-6 w-6" />,
       title: "Order Management",
-      description: "Simple order fulfillment flow: Packing → Ready → Dispatch → Delivered"
+      description:
+        "Simple order fulfillment flow: Packing → Ready → Dispatch → Delivered",
     },
     {
-      icon: <DollarSign className="h-6 w-6" />,
+      icon: <IndianRupee className="h-6 w-6" />,
       title: "COD Collection",
-      description: "Mark orders complete only after payment collection with secure COD acknowledgement"
-    }
+      description:
+        "Mark orders complete only after payment collection with secure COD acknowledgement",
+    },
   ];
 
   const vendorBenefits = [
@@ -47,31 +51,31 @@ const Vendor = () => {
     "GPS-guided delivery for accuracy",
     "Simple order status updates",
     "Secure cash collection process",
-    "Build trust in your neighborhood"
+    "Build trust in your neighborhood",
   ];
 
   const stats = [
     { number: "500+", label: "Active Vendors" },
     { number: "10K+", label: "Daily Orders" },
     { number: "95%", label: "On-time Delivery" },
-    { number: "4.8★", label: "Vendor Rating" }
+    { number: "4.8★", label: "Vendor Rating" },
   ];
 
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-20 pb-16 gradient-hero relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto p-12 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center px-4 py-2 bg-white/20 rounded-full text-white text-sm font-medium mb-6">
                 <Users className="h-4 w-4 mr-2" />
                 For Vendors & Local Sellers
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6">
+              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
                 Empower Your
                 <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
                   Business
@@ -79,15 +83,23 @@ const Vendor = () => {
                 with Tech
               </h1>
               <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                Join the digital revolution and grow your vegetable & fruit business. 
-                Reach more customers, manage orders efficiently, and build lasting trust.
+                Join the digital revolution and grow your vegetable & fruit
+                business. Reach more customers, manage orders efficiently, and
+                build lasting trust.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift">
+                <Button
+                  size="lg"
+                  className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+                >
                   <Download className="h-5 w-5 mr-2" />
                   Download Vendor App
                 </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-white bg-transparent text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
+                >
                   Learn How It Works
                 </Button>
               </div>
@@ -132,9 +144,7 @@ const Vendor = () => {
                 <div className="text-3xl lg:text-4xl font-bold text-purple-600 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">
-                  {stat.label}
-                </div>
+                <div className="text-gray-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -149,11 +159,11 @@ const Vendor = () => {
               Smart Tools for Local Vendors
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Everything you need to digitize your business and serve customers better 
-              with our vendor-focused mobile application.
+              Everything you need to digitize your business and serve customers
+              better with our vendor-focused mobile application.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {vendorFeatures.map((feature, index) => (
               <Card key={index} className="hover-lift border-0 shadow-lg">
@@ -166,9 +176,7 @@ const Vendor = () => {
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">
                         {feature.title}
                       </h3>
-                      <p className="text-gray-600">
-                        {feature.description}
-                      </p>
+                      <p className="text-gray-600">{feature.description}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -189,13 +197,15 @@ const Vendor = () => {
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                 Grow Your Business
-                <span className="block text-purple-600">with Digital Tools</span>
+                <span className="block text-purple-600">
+                  with Digital Tools
+                </span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Transform your traditional business into a modern, efficient operation 
-                that customers love and trust.
+                Transform your traditional business into a modern, efficient
+                operation that customers love and trust.
               </p>
-              
+
               <div className="space-y-4 mb-8">
                 {vendorBenefits.map((benefit, index) => (
                   <div key={index} className="flex items-center space-x-3">
@@ -205,12 +215,15 @@ const Vendor = () => {
                 ))}
               </div>
 
-              <Button size="lg" className="gradient-primary text-white hover:shadow-lg font-semibold px-8 py-4 text-lg hover-lift">
+              <Button
+                size="lg"
+                className="gradient-primary text-white hover:shadow-lg font-semibold px-8 py-4 text-lg hover-lift"
+              >
                 <Download className="h-5 w-5 mr-2" />
                 Get Started Today
               </Button>
             </div>
-            
+
             <div className="grid grid-cols-1 gap-6">
               <Card className="hover-lift">
                 <CardContent className="p-6">
@@ -219,8 +232,12 @@ const Vendor = () => {
                       <Clock className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900">Save Time</h3>
-                      <p className="text-gray-600">Automate order management and customer registration</p>
+                      <h3 className="text-lg font-semibold text-gray-900">
+                        Save Time
+                      </h3>
+                      <p className="text-gray-600">
+                        Automate order management and customer registration
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -233,8 +250,12 @@ const Vendor = () => {
                       <TrendingUp className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900">Increase Revenue</h3>
-                      <p className="text-gray-600">Reach more customers and optimize delivery routes</p>
+                      <h3 className="text-lg font-semibold text-gray-900">
+                        Increase Revenue
+                      </h3>
+                      <p className="text-gray-600">
+                        Reach more customers and optimize delivery routes
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -247,8 +268,12 @@ const Vendor = () => {
                       <Shield className="h-6 w-6" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-900">Build Trust</h3>
-                      <p className="text-gray-600">Transparent tracking and reliable service delivery</p>
+                      <h3 className="text-lg font-semibold text-gray-900">
+                        Build Trust
+                      </h3>
+                      <p className="text-gray-600">
+                        Transparent tracking and reliable service delivery
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -266,16 +291,33 @@ const Vendor = () => {
               Simple 4-Step Process
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Get started with our vendor app and start growing your business today
+              Get started with our vendor app and start growing your business
+              today
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "1", title: "Download App", desc: "Get the vendor app from Google Play Store" },
-              { step: "2", title: "Register Customers", desc: "Add customers directly at their doorstep" },
-              { step: "3", title: "Manage Orders", desc: "Track and fulfill orders through the admin panel" },
-              { step: "4", title: "Deliver & Collect", desc: "Use GPS navigation and collect payment on delivery" }
+              {
+                step: "1",
+                title: "Download App",
+                desc: "Get the vendor app from Our Website Or Google Play Store",
+              },
+              {
+                step: "2",
+                title: "Register Customers",
+                desc: "Add customers directly at their doorstep",
+              },
+              {
+                step: "3",
+                title: "Manage Orders",
+                desc: "Track and fulfill orders through the admin panel",
+              },
+              {
+                step: "4",
+                title: "Deliver & Collect",
+                desc: "Use GPS navigation and collect payment on delivery",
+              },
             ].map((item, index) => (
               <Card key={index} className="hover-lift text-center">
                 <CardContent className="p-6">
@@ -285,9 +327,7 @@ const Vendor = () => {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600">
-                    {item.desc}
-                  </p>
+                  <p className="text-gray-600">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}
@@ -302,15 +342,22 @@ const Vendor = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Join hundreds of vendors who are already growing their business 
-            with Kadai 2 Manai's vendor platform.
+            Join hundreds of vendors who are already growing their business with
+            Kadai 2 Manai's vendor platform.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift">
+            <Button
+              size="lg"
+              className="bg-white text-purple-600 hover:bg-gray-100 font-semibold px-8 py-4 text-lg hover-lift"
+            >
               <Download className="h-5 w-5 mr-2" />
               Download Vendor App
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-white bg-transparent text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-4 text-lg"
+            >
               Contact Support
             </Button>
           </div>
